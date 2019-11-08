@@ -143,27 +143,27 @@
 		<!-- example parameters from the template --> 
 		
 		<!-- motile cell type parameters --> 
-		<CellA_Volume_Total type="double" units="cubic_micron">1</CellA_Volume_Total>
-		<CellA_Volume_solid type="double" units="cubic_micron">0.75</CellA_Volume_solid>
-		<CellA_Volume_fluid type="double" units="cubic_micron">0.25</CellA_Volume_fluid>
-		<CellA_Volume_fluid_fraction type="double" units="none">0.75</CellA_Volume_fluid_fraction>
-		<CellA_Volume_nuclear type="double" units="cubic_micron">0.25</CellA_Volume_nuclear>
-		<CellA_Volume_nuclear_solid type="double" units="cubic_micron">0.20</CellA_Volume_nuclear_solid>
-		<CellA_Volume_nuclear_fluid type="double" units="cubic_micron">0.05</CellA_Volume_nuclear_fluid>
-		<CellA_Volume_cytoplasmic type="double" units="cubic_micron">0.60</CellA_Volume_cytoplasmic>
-		<CellA_Volume_cytoplasmic_solid type="double" units="cubic_micron">0.15</CellA_Volume_cytoplasmic_solid>
-		<CellA_Volume_cytoplasmic_fluid type="double" units="cubic_micron">0.15</CellA_Volume_cytoplasmic_fluid>
-		<CellA_Volume_clacification_fraction type="double" units="none">0.0</CellA_Volume_clacification_fraction>
-		<CellA_Volume_cytoplasmic_to_nuclear_ratio type="double" units="none">0.67</CellA_Volume_cytoplasmic_to_nuclear_ratio>
-		<CellA_Volume_rupture_volume type="double" units="cubic_micron">2.0</CellA_Volume_rupture_volume>
-		<CellA_Volume_cytoplasmic_biomass_change_rate type="double" units="cubic_micron/min">0.1</CellA_Volume_cytoplasmic_biomass_change_rate>
-		<CellA_Volume_nuclear_biomass_change_rate type="double" units="cubic_micron/min">0.1</CellA_Volume_nuclear_biomass_change_rate>
-		<CellA_Volume_fluid_change_rate type="double" units="cubic_micron/min">0.1</CellA_Volume_fluid_change_rate>
-		<CellA_Volume_calcification_rate type="double" units="cubic_micron/min">0.1</CellA_Volume_calcification_rate>
-		<CellA_Volume_target_solid_cytoplasmic type="double" units="cubic_micron">0.1</CellA_Volume_target_solid_cytoplasmic>
-		<CellA_Volume_target_solid_nuclear type="double" units="cubic_micron">0.25</CellA_Volume_target_solid_nuclear>
-		<CellA_Volume_target_fluid_fraction type="double" units="cubic_micron">0.67</CellA_Volume_target_fluid_fraction>
-		<CellA_Volume_relative_rupture_volume type="double" units="none">2.0</CellA_Volume_relative_rupture_volume>
+		<Volume_Total type="double" units="cubic_micron">1</Volume_Total>
+		<Volume_solid type="double" units="cubic_micron">0.75</Volume_solid>
+		<Volume_fluid type="double" units="cubic_micron">0.25</Volume_fluid>
+		<Volume_fluid_fraction type="double" units="none">0.75</Volume_fluid_fraction>
+		<Volume_nuclear type="double" units="cubic_micron">0.25</Volume_nuclear>
+		<Volume_nuclear_solid type="double" units="cubic_micron">0.20</Volume_nuclear_solid>
+		<Volume_nuclear_fluid type="double" units="cubic_micron">0.05</Volume_nuclear_fluid>
+		<Volume_cytoplasmic type="double" units="cubic_micron">0.60</Volume_cytoplasmic>
+		<Volume_cytoplasmic_solid type="double" units="cubic_micron">0.15</Volume_cytoplasmic_solid>
+		<Volume_cytoplasmic_fluid type="double" units="cubic_micron">0.15</Volume_cytoplasmic_fluid>
+		<Volume_clacification_fraction type="double" units="none">0.0</Volume_clacification_fraction>
+		<Volume_cytoplasmic_to_nuclear_ratio type="double" units="none">0.67</Volume_cytoplasmic_to_nuclear_ratio>
+		<Volume_rupture_volume type="double" units="cubic_micron">2.0</Volume_rupture_volume>
+		<Volume_cytoplasmic_biomass_change_rate type="double" units="cubic_micron/min">0.1</Volume_cytoplasmic_biomass_change_rate>
+		<Volume_nuclear_biomass_change_rate type="double" units="cubic_micron/min">0.1</Volume_nuclear_biomass_change_rate>
+		<Volume_fluid_change_rate type="double" units="cubic_micron/min">0.1</Volume_fluid_change_rate>
+		<Volume_calcification_rate type="double" units="cubic_micron/min">0.1</Volume_calcification_rate>
+		<Volume_target_solid_cytoplasmic type="double" units="cubic_micron">0.1</Volume_target_solid_cytoplasmic>
+		<Volume_target_solid_nuclear type="double" units="cubic_micron">0.25</Volume_target_solid_nuclear>
+		<Volume_target_fluid_fraction type="double" units="cubic_micron">0.67</Volume_target_fluid_fraction>
+		<Volume_relative_rupture_volume type="double" units="none">2.0</Volume_relative_rupture_volume>
 
 	</user_parameters>
 	

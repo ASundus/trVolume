@@ -163,27 +163,27 @@ void create_cell_types( void )
 	//CellA.phenotype.motility.migration_bias = 0.0;// completely random 
 	
 	
-	CellA.phenotype.volume.total=parameters.doubles( "CellA_Volume_Total" );
-	CellA.phenotype.volume.solid=parameters.doubles( "CellA_Volume_solid" );
-	CellA.phenotype.volume.fluid=parameters.doubles( "CellA_Volume_fluid" );
-	CellA.phenotype.volume.fluid_fraction=parameters.doubles( "CellA_Volume_fluid_fraction" );
-	CellA.phenotype.volume.nuclear=parameters.doubles( "CellA_Volume_nuclear" );
-	CellA.phenotype.volume.nuclear_solid=parameters.doubles( "CellA_Volume_nuclear_solid" );
-	CellA.phenotype.volume.nuclear_fluid=parameters.doubles( "CellA_Volume_nuclear_fluid" );
-	CellA.phenotype.volume.cytoplasmic=parameters.doubles( "CellA_Volume_cytoplasmic" );
-	CellA.phenotype.volume.cytoplasmic_solid=parameters.doubles( "CellA_Volume_cytoplasmic_solid" );
-	CellA.phenotype.volume.cytoplasmic_fluid=parameters.doubles( "CellA_Volume_cytoplasmic_fluid" );
-	CellA.phenotype.volume.calcified_fraction=parameters.doubles( "CellA_Volume_clacification_fraction" );
-	CellA.phenotype.volume.cytoplasmic_to_nuclear_ratio=parameters.doubles( "CellA_Volume_cytoplasmic_to_nuclear_ratio" );
-	CellA.phenotype.volume.rupture_volume=parameters.doubles( "CellA_Volume_rupture_volume" );
-	CellA.phenotype.volume.cytoplasmic_biomass_change_rate=parameters.doubles( "CellA_Volume_cytoplasmic_biomass_change_rate" );
-	CellA.phenotype.volume.nuclear_biomass_change_rate=parameters.doubles( "CellA_Volume_nuclear_biomass_change_rate" );
-	CellA.phenotype.volume.fluid_change_rate=parameters.doubles( "CellA_Volume_fluid_change_rate" );
-	CellA.phenotype.volume.calcification_rate=parameters.doubles( "CellA_Volume_calcification_rate" );
-	CellA.phenotype.volume.target_solid_cytoplasmic=parameters.doubles( "CellA_Volume_target_solid_cytoplasmic" );
-	CellA.phenotype.volume.target_solid_nuclear=parameters.doubles( "CellA_Volume_target_solid_nuclear" );
-	CellA.phenotype.volume.target_fluid_fraction=parameters.doubles( "CellA_Volume_target_fluid_fraction" );
-	CellA.phenotype.volume.relative_rupture_volume=parameters.doubles( "CellA_Volume_relative_rupture_volume");
+	CellA.phenotype.volume.total=parameters.doubles( "Volume_Total" );
+	CellA.phenotype.volume.solid=parameters.doubles( "Volume_solid" );
+	CellA.phenotype.volume.fluid=parameters.doubles( "Volume_fluid" );
+	CellA.phenotype.volume.fluid_fraction=parameters.doubles( "Volume_fluid_fraction" );
+	CellA.phenotype.volume.nuclear=parameters.doubles( "Volume_nuclear" );
+	CellA.phenotype.volume.nuclear_solid=parameters.doubles( "Volume_nuclear_solid" );
+	CellA.phenotype.volume.nuclear_fluid=parameters.doubles( "Volume_nuclear_fluid" );
+	CellA.phenotype.volume.cytoplasmic=parameters.doubles( "Volume_cytoplasmic" );
+	CellA.phenotype.volume.cytoplasmic_solid=parameters.doubles( "Volume_cytoplasmic_solid" );
+	CellA.phenotype.volume.cytoplasmic_fluid=parameters.doubles( "Volume_cytoplasmic_fluid" );
+	CellA.phenotype.volume.calcified_fraction=parameters.doubles( "Volume_clacification_fraction" );
+	CellA.phenotype.volume.cytoplasmic_to_nuclear_ratio=parameters.doubles( "Volume_cytoplasmic_to_nuclear_ratio" );
+	CellA.phenotype.volume.rupture_volume=parameters.doubles( "Volume_rupture_volume" );
+	CellA.phenotype.volume.cytoplasmic_biomass_change_rate=parameters.doubles( "Volume_cytoplasmic_biomass_change_rate" );
+	CellA.phenotype.volume.nuclear_biomass_change_rate=parameters.doubles( "Volume_nuclear_biomass_change_rate" );
+	CellA.phenotype.volume.fluid_change_rate=parameters.doubles( "Volume_fluid_change_rate" );
+	CellA.phenotype.volume.calcification_rate=parameters.doubles( "Volume_calcification_rate" );
+	CellA.phenotype.volume.target_solid_cytoplasmic=parameters.doubles( "Volume_target_solid_cytoplasmic" );
+	CellA.phenotype.volume.target_solid_nuclear=parameters.doubles( "Volume_target_solid_nuclear" );
+	CellA.phenotype.volume.target_fluid_fraction=parameters.doubles( "Volume_target_fluid_fraction" );
+	CellA.phenotype.volume.relative_rupture_volume=parameters.doubles( "Volume_relative_rupture_volume");
 	
 	
 	// Set cell-cell adhesion to 5% of other cells 
@@ -252,12 +252,12 @@ void setup_tissue( void )
 	
 	Cell* pC;
 	
-for(int i=0;i<50;i++)
-{
+//for(int i=0;i<50;i++)
+//{
 	pC = create_cell(CellA); 
-	pC->assign_position( i, i, 0.0 );
+	pC->assign_position( 0.0, 0.0, 0.0 );
 
-}
+//}
 
 	
 	return; 
