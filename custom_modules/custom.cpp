@@ -196,7 +196,9 @@ void create_cell_types( void )
 	
 	// Set proliferation to 10% of other cells. 
 	// Alter the transition rate from G0G1 state to S state
-	CellA.phenotype.cycle.data.transition_rate(0,0) = 0;
+	//CellA.phenotype.cycle.data.transition_rate(0,0) = 0.05;
+	//CellA.phenotype.cycle.data.transition_rate(0,0) = 0.05;
+	//CellA.phenotype.cycle.Phase_Link.fixed_duration = 1;
 		//parameters.doubles( "CellA_relative_cycle_entry_rate" ); // 0.1; 
 
 	return; 
@@ -267,12 +269,21 @@ std::vector<std::string> my_coloring_function( Cell* pCell )
 {
 	// start with flow cytometry coloring 
 		
-	std::vector<std::string> output = false_cell_coloring_cytometry(pCell); 
+	std::vector<std::string> output = simple_cell_coloring(pCell); 
 		
-    if( pCell->phenotype.death.dead == false && pCell->type == 0 )
+    if( pCell->phenotype.death.dead == false && pCell->type == 1 )
 	{
-		output[0] = "blue"; 
-		output[2] = "blue"; 
+		int cfluid = (int) round(255* ((pCell->phenotype.volume.cytoplasmic_fluid)/(pCell->phenotype.volume.cytoplasmic))  ); 
+		char szTempString [128];
+		sprintf( szTempString , "rgb(%u,%u,%u)",0, 0, cfluid);
+		output[0].assign( szTempString );
+		output[1].assign( szTempString );
+		int nfluid = (int) round (255 * ((pCell->phenotype.volume.nuclear_fluid / pCell->phenotype.volume.nuclear))  ); 
+		sprintf( szTempString , "rgb(%u,%u,%u)", 0 , nfluid , 0 );
+		output[2].assign( szTempString );
+		output[3].assign( szTempString );
+		
+		return output;  
 	}
 	
 	return output; 

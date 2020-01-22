@@ -74,20 +74,20 @@
 
 <PhysiCell_settings version="devel-version">
 	<domain>
-		<x_min>-500</x_min>
-		<x_max>500</x_max>
-		<y_min>-500</y_min>
-		<y_max>500</y_max>
+		<x_min>-100</x_min>
+		<x_max>100</x_max>
+		<y_min>-100</y_min>
+		<y_max>100</y_max>
 		<z_min>-10</z_min>
 		<z_max>10</z_max>
-		<dx>20</dx>
-		<dy>20</dy>
-		<dz>20</dz>
+		<dx>10</dx>
+		<dy>10</dy>
+		<dz>10</dz>
 		<use_2D>true</use_2D>
 	</domain>
 	
 	<overall>
-		<max_time units="min">7200</max_time> <!-- 5 days * 24 h * 60 min -->
+		<max_time units="min">1440</max_time> <!--  24hrs *60 min -->
 		<time_units>min</time_units>
 		<space_units>micron</space_units>
 	</overall>
@@ -100,12 +100,12 @@
 		<folder>output</folder> <!-- use . for root --> 
 
 		<full_data>
-			<interval units="min">360</interval>
-			<enable>true</enable>
+			<interval units="min">10</interval>
+			<enable>false</enable>
 		</full_data>
 		
 		<SVG>
-			<interval units="min">60</interval>
+			<interval units="min">10</interval>
 			<enable>true</enable>
 		</SVG>
 		
@@ -125,7 +125,7 @@
 		</variable>
 		
 		<options>
-			<calculate_gradients>true</calculate_gradients>
+			<calculate_gradients>false</calculate_gradients>
 			<track_internalized_substrates_in_each_agent>false</track_internalized_substrates_in_each_agent>
 			<!-- not yet supported --> 
 			<initial_condition type="matlab" enabled="false">
@@ -143,27 +143,27 @@
 		<!-- example parameters from the template --> 
 		
 		<!-- motile cell type parameters --> 
-		<Volume_Total type="double" units="cubic_micron">1</Volume_Total>
-		<Volume_solid type="double" units="cubic_micron">0.75</Volume_solid>
-		<Volume_fluid type="double" units="cubic_micron">0.25</Volume_fluid>
+		<Volume_Total type="double" units="cubic_micron">2494</Volume_Total>
+		<Volume_solid type="double" units="cubic_micron">623.5</Volume_solid>
+		<Volume_fluid type="double" units="cubic_micron">1870.5</Volume_fluid>
 		<Volume_fluid_fraction type="double" units="none">0.75</Volume_fluid_fraction>
-		<Volume_nuclear type="double" units="cubic_micron">0.25</Volume_nuclear>
-		<Volume_nuclear_solid type="double" units="cubic_micron">0.20</Volume_nuclear_solid>
-		<Volume_nuclear_fluid type="double" units="cubic_micron">0.05</Volume_nuclear_fluid>
-		<Volume_cytoplasmic type="double" units="cubic_micron">0.60</Volume_cytoplasmic>
-		<Volume_cytoplasmic_solid type="double" units="cubic_micron">0.15</Volume_cytoplasmic_solid>
-		<Volume_cytoplasmic_fluid type="double" units="cubic_micron">0.15</Volume_cytoplasmic_fluid>
+		<Volume_nuclear type="double" units="cubic_micron">540.0</Volume_nuclear>
+		<Volume_nuclear_solid type="double" units="cubic_micron">135.0</Volume_nuclear_solid>
+		<Volume_nuclear_fluid type="double" units="cubic_micron">405.0</Volume_nuclear_fluid>
+		<Volume_cytoplasmic type="double" units="cubic_micron">1954.0</Volume_cytoplasmic>
+		<Volume_cytoplasmic_solid type="double" units="cubic_micron">488.5</Volume_cytoplasmic_solid>
+		<Volume_cytoplasmic_fluid type="double" units="cubic_micron">1465.5</Volume_cytoplasmic_fluid>
 		<Volume_clacification_fraction type="double" units="none">0.0</Volume_clacification_fraction>
-		<Volume_cytoplasmic_to_nuclear_ratio type="double" units="none">0.67</Volume_cytoplasmic_to_nuclear_ratio>
-		<Volume_rupture_volume type="double" units="cubic_micron">2.0</Volume_rupture_volume>
-		<Volume_cytoplasmic_biomass_change_rate type="double" units="cubic_micron/min">0.1</Volume_cytoplasmic_biomass_change_rate>
-		<Volume_nuclear_biomass_change_rate type="double" units="cubic_micron/min">0.1</Volume_nuclear_biomass_change_rate>
-		<Volume_fluid_change_rate type="double" units="cubic_micron/min">0.1</Volume_fluid_change_rate>
-		<Volume_calcification_rate type="double" units="cubic_micron/min">0.1</Volume_calcification_rate>
-		<Volume_target_solid_cytoplasmic type="double" units="cubic_micron">0.1</Volume_target_solid_cytoplasmic>
-		<Volume_target_solid_nuclear type="double" units="cubic_micron">0.25</Volume_target_solid_nuclear>
-		<Volume_target_fluid_fraction type="double" units="cubic_micron">0.67</Volume_target_fluid_fraction>
+		<Volume_cytoplasmic_to_nuclear_ratio type="double" units="none">3.6</Volume_cytoplasmic_to_nuclear_ratio>
+		<Volume_cytoplasmic_biomass_change_rate type="double" units="cubic_micron/min">0.0045</Volume_cytoplasmic_biomass_change_rate>
+		<Volume_nuclear_biomass_change_rate type="double" units="cubic_micron/min">0.0055</Volume_nuclear_biomass_change_rate>
+		<Volume_fluid_change_rate type="double" units="cubic_micron/min">0.05</Volume_fluid_change_rate>
+		<Volume_calcification_rate type="double" units="cubic_micron/min">0.0</Volume_calcification_rate>
+		<Volume_target_solid_cytoplasmic type="double" units="cubic_micron">488.5</Volume_target_solid_cytoplasmic>
+		<Volume_target_solid_nuclear type="double" units="cubic_micron">135.0</Volume_target_solid_nuclear>
+		<Volume_target_fluid_fraction type="double" units="cubic_micron">0.75</Volume_target_fluid_fraction>
 		<Volume_relative_rupture_volume type="double" units="none">2.0</Volume_relative_rupture_volume>
+		<Volume_rupture_volume type="double" units="cubic_micron">4988</Volume_rupture_volume>
 
 	</user_parameters>
 	
