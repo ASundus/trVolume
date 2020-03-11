@@ -143,7 +143,7 @@
 		<!-- example parameters from the template --> 
 		
 		<!-- motile cell type parameters --> 
-		<Volume type="string" Description="Modifying these variables will affect the volume of cells in simulation" >"Parameters"</Volume>
+		<Volume_Parameters type="string" Description="Modifying these variables will affect the volume of cells in simulation" >"Parameters"</Volume_Parameters >
 		
 		<Volume_target_solid_cytoplasmic type="double" units="cubic_micron">488.5</Volume_target_solid_cytoplasmic>
 		<Volume_target_solid_nuclear type="double" units="cubic_micron">135.0</Volume_target_solid_nuclear>
@@ -153,7 +153,7 @@
 		<Volume_fluid_change_rate type="double" units="cubic_micron/min">0.05</Volume_fluid_change_rate>
 		<Volume_calcification_rate type="double" units="cubic_micron/min">0.0</Volume_calcification_rate>
 		
-		<Volume type="string" Description="Modifying these variables will affect the volume of cells temporarily and cells will go back to steady state volume" >"State Variables"</Volume>
+		<Volume_State_Variables type="string" Description="Modifying these variables will affect the volume of cells temporarily and cells will go back to steady state volume" >"State Variables"</Volume_State_Variables>
 		
 		<Volume_Total type="double" units="cubic_micron">2494</Volume_Total>
 		<Volume_solid type="double" units="cubic_micron">623.5</Volume_solid>
