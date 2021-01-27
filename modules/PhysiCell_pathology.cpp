@@ -508,15 +508,15 @@ void SVG_plot( std::string filename , Microenvironment& M, double z_slice , doub
 			
 			//target volume radius
 			double target_volume_solid=((pC->phenotype.volume.target_solid_cytoplasmic)+(pC->phenotype.volume.target_solid_nuclear));
-			double target_volume_fluid=target_volume_solid*( pC->phenotype.volume.target_fluid_fraction);
-			double target_volume=target_volume_fluid+target_volume_solid;
-			double target_radius=pow( target_volume/4.188790204786391,  0.333333333333333333333333333333333333333);
+			double target_volume=target_volume_solid/(1-( pC->phenotype.volume.target_fluid_fraction));
+			
+			double t_r=pow( target_volume/4.188790204786391,  0.333333333333333333333333333333333333333);
 			
 			
 			// figure out how much of the cell intersects with z = 0 
    
 			double plot_radius = sqrt( r*r - z*z ); 
-
+			double target_radius=sqrt( t_r*t_r - z*z );
 			Write_SVG_circle( os, (pC->position)[0]-X_lower, (pC->position)[1]-Y_lower, 
 				plot_radius , 0.5, Colors[1], Colors[0] );
 			Write_SVG_circle( os, (pC->position)[0]-X_lower, (pC->position)[1]-Y_lower, 
